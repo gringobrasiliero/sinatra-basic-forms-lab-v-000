@@ -11,9 +11,7 @@ get '/new' do
 end
 
 post '/' do
-@name = params[:name]
-@breed = params[:breed]
-@age = params[:age]
+ @dog = Puppy.new(params[:name], params[:breed], params[:age])
   erb :display_puppy
 end
 end
