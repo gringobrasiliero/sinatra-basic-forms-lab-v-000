@@ -6,7 +6,7 @@ get '/' do
   erb :index
 end
 
-get 'App/new' do
+get '/new' do
   erb :create_puppy
 end
 
